@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import logo from './logo.svg'
+import imagen0 from './img/rey_atanagildo.png';
+import imagen1 from './img/rey_ataulfo.png';
 import './App.css'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     <>
         <div className="caja"></div>
         <button>Aceptar</button>
-        <img />
+        <img src={imagen0}/>
         <input className="campo"/>
     </>
   );
