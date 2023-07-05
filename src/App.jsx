@@ -6,9 +6,9 @@ import './App.css'
 function App() {
   return (
     <>
-        <div className="caja"></div>
+        <div className="caja">1</div>
         <button>Aceptar</button>
-        <img src={imagen0}/>
+        <div><img src={imagen0}/></div>
         <input className="campo"/>
     </>
   );
