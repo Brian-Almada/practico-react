@@ -4,9 +4,13 @@ import imagen1 from './img/rey_ataulfo.png';
 import './App.css'
 
 function App() {
+  function incrementar(e){
+    e.target.innerHTML = Number(e.target.innerHTML)+1;
+  }
+
   return (
     <>
-        <div className="caja">1</div>
+        <div className="caja" onClick={incrementar}>1</div>
         <button>Aceptar</button>
         <div><img src={imagen0}/></div>
         <input className="campo"/>
