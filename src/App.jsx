@@ -13,12 +13,15 @@ function App() {
   function convertir(){
     refCaja.current.innerHTML = Number(refCaja.current.innerHTML)*cambio;
   }
+  function cambiar(e){
+    e.target.src = imagen1;
+  }
 
   return (
     <>
         <div ref={refCaja} className="caja" onClick={incrementar}>1</div>
         <button onClick={convertir}>Aceptar</button>
-        <div><img src={imagen0}/></div>
+        <div><img onClick={cambiar} src={imagen0}/></div>
         <input className="campo"/>
     </>
   );
