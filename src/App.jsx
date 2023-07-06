@@ -1,17 +1,23 @@
 import React, { useState } from 'react'
 import imagen0 from './img/rey_atanagildo.png';
 import imagen1 from './img/rey_ataulfo.png';
+import { useRef } from 'react';
 import './App.css'
 
 function App() {
+  const cambio = 23.16;
+  const refCaja = useRef();
   function incrementar(e){
     e.target.innerHTML = Number(e.target.innerHTML)+1;
+  }
+  function convertir(){
+    refCaja.current.innerHTML = Number(refCaja.current.innerHTML)*cambio;
   }
 
   return (
     <>
-        <div className="caja" onClick={incrementar}>1</div>
-        <button>Aceptar</button>
+        <div ref={refCaja} className="caja" onClick={incrementar}>1</div>
+        <button onClick={convertir}>Aceptar</button>
         <div><img src={imagen0}/></div>
         <input className="campo"/>
     </>
