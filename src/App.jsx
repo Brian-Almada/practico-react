@@ -7,16 +7,16 @@ import './App.css'
 function App() {
   const cambio = 23.16;
   const refCaja = useRef();
-  function incrementar(e){
+  const incrementar = (e) => {
     e.target.innerHTML = Number(e.target.innerHTML)+1;
   }
-  function convertir(){
+  const convertir = () => {
     refCaja.current.innerHTML = Number(refCaja.current.innerHTML)*cambio;
   }
-  function cambiar(e){
+  const cambiar = (e) => {
     e.target.src = imagen1;
   }
-  function lectura(e){
+  const lectura = (e) => {
     refCaja.current.innerHTML = e.target.value;
   }
 
