@@ -16,13 +16,16 @@ function App() {
   function cambiar(e){
     e.target.src = imagen1;
   }
+  function lectura(e){
+    refCaja.current.innerHTML = e.target.value;
+  }
 
   return (
     <>
         <div ref={refCaja} className="caja" onClick={incrementar}>1</div>
         <button onClick={convertir}>Aceptar</button>
         <div><img onClick={cambiar} src={imagen0}/></div>
-        <input className="campo"/>
+        <input onChange={lectura} className="campo"/>
     </>
   );
 }
