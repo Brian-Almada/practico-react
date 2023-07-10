@@ -14,7 +14,12 @@ function App() {
     refCaja.current.innerHTML = Number(refCaja.current.innerHTML)*cambio;
   }
   const cambiar = (e) => {
-    e.target.src = imagen1;
+    if (e.target.src.includes("atanagildo")) {
+        e.target.src = imagen1;
+    } else {
+        e.target.src = imagen0;
+    }
+
   }
   const lectura = (e) => {
     refCaja.current.innerHTML = e.target.value;
