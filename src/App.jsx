@@ -9,6 +9,14 @@ function App() {
   const refCaja = useRef();
   const incrementar = (e) => {
     e.target.innerHTML = Number(e.target.innerHTML)+1;
+    if (e.target.innerHTML >= 10) {
+      e.target.innerHTML = 1
+    }
+    if (e.target.innerHTML >= 8) {
+      e.target.style.backgroundColor = "red";
+    } else {
+      e.target.style.backgroundColor = "white";
+    }
   }
   const convertir = () => {
     refCaja.current.innerHTML = Number(refCaja.current.innerHTML)*cambio;
