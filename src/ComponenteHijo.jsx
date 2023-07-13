@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ComponenteHijo() {
+function ComponenteHijo(prop) {
   return (
     <div>
-        <h1>Hola Mundo</h1>
+        <h1>Hola Rey {prop.rey} que enfundas tu espada {prop.espada} con tus {prop.edad} años</h1>
     </div>
   )
 }

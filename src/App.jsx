@@ -7,6 +7,7 @@ function App() {
 
   return (
     <>
+    <ComponenteHijo rey= "Atanagildo" espada= "Lione" edad= {68}/>
     <ComponenteHijo />
     </>
   );
