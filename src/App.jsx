@@ -1,4 +1,6 @@
-import ComponenteHijo from "./ComponenteHijo";
+import ReyAtanagildo from "./ReyAtanagildo";
+import ReyErvigio from "./ReyErvigio";
+import ReyAtaulfo from "./ReyAtaulfo";
 import React, { useState } from 'react';
 import { useRef } from 'react';
 import './App.css';
@@ -7,8 +9,9 @@ function App() {
 
   return (
     <>
-    <ComponenteHijo rey= "Atanagildo" espada= "Lione" edad= {68}/>
-    <ComponenteHijo />
+    <ReyAtanagildo />
+    <ReyErvigio />
+    <ReyAtaulfo />
     </>
   );
 }
