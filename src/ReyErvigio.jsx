@@ -1,10 +1,10 @@
 import React from 'react'
-import imgErvigio from './img/rey_ervigio.png'
+import ImgErvigio from './img/rey_ervigio.png'
 
 function ReyErvigio() {
   return (
     <div>
-        <img src= {imgErvigio} />
+        <img src= {ImgErvigio} />
     </div>
   )
 }
