@@ -34,7 +34,12 @@ function App() {
   const [total, setTotal] = useState(0);
   return (
     <>
-    
+    <Cena nombre= {reyes[0].nombre} color= {reyes[0].color} precio= {reyes[0].precio} setTotal= {setTotal}/>
+    <Cena nombre= {reyes[1].nombre} color= {reyes[1].color} precio= {reyes[1].precio} setTotal= {setTotal}/>
+    <Cena nombre= {reyes[2].nombre} color= {reyes[2].color} precio= {reyes[2].precio} setTotal= {setTotal}/>
+    <Cena nombre= {reyes[3].nombre} color= {reyes[3].color} precio= {reyes[3].precio} setTotal= {setTotal}/>
+    <Cena nombre= {reyes[4].nombre} color= {reyes[4].color} precio= {reyes[4].precio} setTotal= {setTotal}/>
+    <Cena nombre= {reyes[5].nombre} color= {reyes[5].color} precio= {reyes[5].precio} setTotal= {setTotal}/>
     </>
   );
 }
