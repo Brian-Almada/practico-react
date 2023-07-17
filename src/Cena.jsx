@@ -1,12 +1,18 @@
 import React from 'react'
 
-function Cena() {
+function Cena({nombre, precio, color, setTotal}) {
+    const comprar = () => {
+
+    }
     return <>
     <div className='rey'>
-        <h1>{}</h1>
+        <h1>{nombre}</h1>
         <div className='titulo'>Precio</div>
         <div className='precio'>
-            {precio}$
+            {precio}
+            <div>
+                <button onClick={comprar}>Comprar</button>
+            </div>
         </div>
     </div>
     </>;

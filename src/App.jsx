@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import Cena from "./Cena";
 import { useRef } from 'react';
 import './App.css';
 
