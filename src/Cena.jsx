@@ -5,7 +5,7 @@ function Cena({nombre, precio, color, setTotal}) {
 
     }
     return <>
-    <div className='rey'>
+    <div className='rey' style={{backgroundColor: color}}>
         <h1>{nombre}</h1>
         <div className='titulo'>Precio</div>
         <div className='precio'>

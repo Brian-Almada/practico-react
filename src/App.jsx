@@ -35,6 +35,7 @@ function App() {
   const [total, setTotal] = useState(0);
   return (
     <>
+    <h1>Total a pagar: ${total}</h1>
     <Cena nombre= {reyes[0].nombre} color= {reyes[0].color} precio= {reyes[0].precio} setTotal= {setTotal}/>
     <Cena nombre= {reyes[1].nombre} color= {reyes[1].color} precio= {reyes[1].precio} setTotal= {setTotal}/>
     <Cena nombre= {reyes[2].nombre} color= {reyes[2].color} precio= {reyes[2].precio} setTotal= {setTotal}/>
