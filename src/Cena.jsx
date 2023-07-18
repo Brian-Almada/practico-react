@@ -8,8 +8,8 @@ function Cena({nombre, precio, color, setTotal}) {
     }
     return <>
     <div className='rey' style={{backgroundColor: color}}>
-        <img src={imagen} />
         <h1>{nombre}</h1>
+        <img src={imagen} />
         <div className='titulo'>Precio</div>
         <div className='precio'>
             {precio}
